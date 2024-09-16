@@ -9,10 +9,9 @@
 </head>
 <body>
     <h1>Calculadora Simples</h1>
-    <form id="clear">
+    <form id="conteudo">
         <input type="number"  id="n1">
         <input type="number"  id="n2">
-       
     </form>
     <div><br>
         <button onclick="somar()">+</button>
@@ -29,6 +28,7 @@
         var number1 = document.querySelector('#n1')
 var number2 = document.querySelector('#n2')
 var resultado = document.querySelector('span')
+var conteudo = document.querySelector('#conteudo')
 
 function somar() {
     resultado.innerHTML = parseInt(number1.value) + parseInt(number2.value)
@@ -43,9 +43,9 @@ function dividir() {
     resultado.innerHTML = parseInt(number1.value) / parseInt(number2.value)
 }
 
-function removerELemento(){
-    const clear = document.getElementById ("#clear");
-    clear.remove();
+function removerElemento() {
+    const conteudo = document.getElementById ("n1,n2");
+    n1,n2.remove();
 }
     </script>
 
